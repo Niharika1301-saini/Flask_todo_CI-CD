@@ -1,7 +1,7 @@
 FROM python:3
 RUN apt-get update && apt-get install -y bash
 WORKDIR /main
-COPY requirements.txt /app/requirements.txt
+COPY requirements.txt
 RUN pip install -r requirements.txt
 COPY . . 
 
